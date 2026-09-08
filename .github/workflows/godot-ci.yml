@@ -70,6 +70,7 @@ jobs:
     container:
       image: barichello/godot-ci:4.7
     permissions:
+      contents: read    # to read the repository contents
       pages: write      # to deploy to Pages
       id-token: write   # to verify the deployment originates from an appropriate source
     environment:
